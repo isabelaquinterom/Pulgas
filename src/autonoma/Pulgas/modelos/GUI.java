@@ -19,7 +19,7 @@ public class GUI {
     private Timer timer;
     
     // Frecuencia de actualización en milisegundos (reducida para mayor fluidez)
-    private static final int FRECUENCIA_ACTUALIZACION = 20; // 50 FPS.
+    private static final int FRECUENCIA_ACTUALIZACION = 20; // 50 FPS...
     
     /**
      * Constructor para crear una nueva interfaz gráfica.
