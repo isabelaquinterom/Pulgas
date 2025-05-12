@@ -18,6 +18,9 @@ public class GUI {
     private JLabel lblInstrucciones;
     private Timer timer;
     
+    // Frecuencia de actualización en milisegundos (reducida para mayor fluidez)
+    private static final int FRECUENCIA_ACTUALIZACION = 20; // 50 FPS
+    
     /**
      * Constructor para crear una nueva interfaz gráfica.
      * 
@@ -78,8 +81,8 @@ public class GUI {
         
         ventana.add(panelControles, BorderLayout.SOUTH);
         
-        // Configurar timer para actualizar la interfaz
-        timer = new Timer(50, new ActionListener() {
+        // Configurar timer para actualizar la interfaz - frecuencia aumentada
+        timer = new Timer(FRECUENCIA_ACTUALIZACION, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 actualizarInterfaz();
@@ -92,6 +95,9 @@ public class GUI {
         ventana.setResizable(false);
         ventana.setVisible(true);
     }
+    
+    // El resto de la clase se mantiene igual
+    // (métodos inicializarEventos, actualizarInterfaz, iniciar)
     
     /**
      * Inicializa los eventos de la interfaz gráfica.
