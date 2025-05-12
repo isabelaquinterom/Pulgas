@@ -13,10 +13,10 @@ public class Pulgoson extends Arma {
      * Ataca aleatoriamente al 50% de las pulgas en el campo.
      * Las coordenadas x e y no se utilizan para este tipo de arma.
      * 
-     * @param pulgas Lista de pulgas en el campo.
-     * @param x      No utilizado para esta arma.
-     * @param y      No utilizado para esta arma.
-     * @return Número de pulgas eliminadas.
+     * @param pulgas Lista de pulgas en el campo..
+     * @param x      No utilizado para esta arma..
+     * @param y      No utilizado para esta arma..
+     * @return Número de pulgas eliminadas..
      */
     @Override
     public int atacar(ArrayList<Pulga> pulgas, int x, int y) {
@@ -27,7 +27,7 @@ public class Pulgoson extends Arma {
         int numeroAtaques = Math.max(1, pulgas.size() / 2);
         int pulgasEliminadas = 0;
         
-        // Crear una copia de la lista para evitar problemas con la modificación durante la iteración
+        // Crear una copia de la lista para evitar problemas con la modificación durante la iteración.
         ArrayList<Pulga> pulgasCopia = new ArrayList<>(pulgas);
         
         // Mezclar la lista para seleccionar aleatoriamente
