@@ -1,7 +1,7 @@
 package autonoma.Pulgas.modelos;
 
 /**
- * Clase que controla la lógica del juego.
+ * Clase que controla la lógica del juego.,
  */
 public class Juego {
     private Campo campo;
