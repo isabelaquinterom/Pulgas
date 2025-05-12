@@ -24,7 +24,7 @@ public class PulgaMutante extends Pulga {
     }
 
     /**
-     * Constructor para crear una nueva pulga mutante.
+     * Constructor para crear una nueva pulga mutante............
      * 
      * @param x Posición en el eje X.
      * @param y Posición en el eje Y.
