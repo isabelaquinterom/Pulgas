@@ -1,15 +1,16 @@
 package autonoma.Pulgas.modelos;
-
 import javax.swing.JPanel;
 import java.awt.Graphics;
 import java.awt.Dimension;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 
 /**
  * Panel que muestra el juego.
  */
-public class PanelJuego extends JPanel {
+public class PanelJuego extends JPanel implements MouseMotionListener {
     private Juego juego;
     private Campo campo;
     
@@ -26,6 +27,8 @@ public class PanelJuego extends JPanel {
         setBackground(Color.WHITE);
         // Habilitar el focus para recibir eventos de teclado
         setFocusable(true);
+        // Registrar para eventos de movimiento del ratón
+        addMouseMotionListener(this);
     }
     
     /**
@@ -40,6 +43,11 @@ public class PanelJuego extends JPanel {
         // Dibujar fondo
         g.setColor(new Color(220, 240, 255)); // Color celeste claro
         g.fillRect(0, 0, getWidth(), getHeight());
+        
+        // Actualizar las pulgas para que reaccionen al cursor si el juego está activo
+        if (juego.esJuegoActivo()) {
+            campo.actualizarPulgas();
+        }
         
         // Dibujar las pulgas en el campo
         campo.dibujar(g);
@@ -70,5 +78,30 @@ public class PanelJuego extends JPanel {
             
             g.drawString(instrucciones, x, y);
         }
+    }
+    
+    /**
+     * Maneja el evento de movimiento del ratón.
+     * Actualiza la posición del ratón en el campo.
+     * 
+     * @param e Evento de movimiento del ratón.
+     */
+    @Override
+    public void mouseMoved(MouseEvent e) {
+        if (juego.esJuegoActivo()) {
+            campo.actualizarPosicionMouse(e.getX(), e.getY());
+            repaint(); // Solicitar repintado para actualizar las posiciones
+        }
+    }
+
+    /**
+     * Maneja el evento de arrastre del ratón.
+     * 
+     * @param e Evento de arrastre del ratón.
+     */
+    @Override
+    public void mouseDragged(MouseEvent e) {
+        // Tratar igual que mouseMoved
+        mouseMoved(e);
     }
 }

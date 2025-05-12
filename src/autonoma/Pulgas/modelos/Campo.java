@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * Clase que representa el campo de batalla donde se encuentran las pulgas.
+ * Clase que representa el campo de batalla donde se encuentran las pulgas..
  */
 public class Campo {
     private int ancho;
