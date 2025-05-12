@@ -95,9 +95,9 @@ public class PanelJuego extends JPanel implements MouseMotionListener {
     }
 
     /**
-     * Maneja el evento de arrastre del ratón.
+     * Maneja el evento de arrastre del ratón...
      * 
-     * @param e Evento de arrastre del ratón.
+     * @param e Evento de arrastre del ratón...
      */
     @Override
     public void mouseDragged(MouseEvent e) {
