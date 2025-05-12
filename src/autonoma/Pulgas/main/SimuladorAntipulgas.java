@@ -13,7 +13,7 @@ import autonoma.Pulgas.modelos.Juego;
 public class SimuladorAntipulgas {
     
     /**
-     * Método principal para arrancar la aplicación.
+     * .Método principal para arrancar la aplicación.
      * 
      * @param args Argumentos de línea de comandos (no utilizados).
      */
@@ -29,7 +29,7 @@ public class SimuladorAntipulgas {
                     e.printStackTrace();
                 }
                 
-                // Crear una instancia del juego
+                // Crear una instancia del juego..
                 Juego juego = new Juego();
                 
                 // Crear la interfaz gráfica
