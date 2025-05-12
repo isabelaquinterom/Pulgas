@@ -16,7 +16,7 @@ public class PersistenciaScore {
     /**
      * Constructor para crear un nuevo manejador de persistencia.
      * 
-     * @param nombreArchivo Nombre del archivo donde se guarda el puntaje.
+     * @param nombreArchivo Nombre del archivo donde se guarda el puntaje....
      */
     public PersistenciaScore(String nombreArchivo) {
         this.nombreArchivo = nombreArchivo;
