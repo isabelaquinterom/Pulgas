@@ -35,6 +35,6 @@ public class Pulguipium extends Arma {
                 }
             }
         }
-        return 0; // No se encontró pulga para atacar
+        return 0; // No se encontró pulga para atacar...
     }
 }
