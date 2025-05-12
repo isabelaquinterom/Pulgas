@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
  * Clase que representa el misil Pulgoson en el juego.
- * Este arma elimina el 50% de las pulgas que se encuentren en el campo.
+ * Este arma elimina el 50% de las pulgas que se encuentren en el campo.....
  */
 public class Pulgoson extends Arma {
     private Random random = new Random();
