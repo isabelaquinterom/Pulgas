@@ -21,7 +21,7 @@ public class Juego {
      * Constructor para crear un nuevo juego.
      */
     public Juego() {
-        campo = new Campo(ANCHO_CAMPO, ALTO_CAMPO); // Dimensiones del campo
+        campo = new Campo(ANCHO_CAMPO, ALTO_CAMPO); // Dimensiones del campo..
         pistola = new Pulguipium();
         misil = new Pulgoson();
         puntaje = 0;
